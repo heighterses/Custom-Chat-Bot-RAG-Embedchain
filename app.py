@@ -8,19 +8,24 @@ def home():
     return render_template('index.html')
 
 
-@app.route('/get_pdf')
-def pdf():
-    pass
+@app.route('/get_text')
+def text():
+    return render_template('Text.html')
 
 
 @app.route('/get_web')
 def web():
-    pass
+    return render_template('Web.html')
 
 
 @app.route('/get_document')
 def document():
-    pass
+    return render_template('Document.html')
+
+
+@app.route('/qa')
+def qa():
+    return render_template('QnA.html')
 
 
 if __name__ == '__main__':
